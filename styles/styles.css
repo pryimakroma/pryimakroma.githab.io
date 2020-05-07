@@ -1,0 +1,175 @@
+:root{
+  --bd-color:#d3d3d3
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, sans-serif;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.clearfix{
+  clear: both;
+}
+img{
+  display: block;
+  height: 100%;
+}
+.slider-title{
+  padding:20px 0px 60px 0px;
+  text-align: center;
+  font-size: 26px;
+}
+.slider-wrap{
+  width: 973px;
+  height: 1px;
+  min-height: 455px;
+  margin:0 auto;
+  border:1px solid var(--bd-color);
+  position: relative;
+}
+.slider-item{
+  /*background: red;*/
+  width: 25%;
+  height: 100%;
+  float:left;
+  position: relative;
+  padding: 0px 18px 30px;
+  border-right: 1px solid var(--bd-color);
+}
+.slider-item:nth-last-child(2){
+  border:0;
+}
+.slider-item__category{
+  height: 95px;
+  border-bottom: 1px solid var(--bd-color);
+  text-align: center;
+  line-height: 95px;
+}
+.slider-item__category a{
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  color:#72767A;
+
+}
+.slider-item__category a:hover{
+  text-decoration: underline;
+  background-color: var(--bd-color);
+  color: #fff;
+}
+.slider-item__img{
+  height: 194px;
+  padding: 20px 0px;
+}
+.slider-item__img img{
+margin:0 auto;
+  }
+.slider-item__title{
+  min-height: 45px;
+  text-align: center;
+
+}
+.slider-item__title a{
+display: block;
+font-weight: bold;
+text-decoration: none;
+color:#009BE1;
+}
+.slider-item__price{
+  text-align: center;
+  font-weight: bold;
+  color:#000000;
+}
+.old-price{
+  font-size: 12px;
+  text-decoration: line-through;
+}
+.slider-item__price span:last-child{
+  font-size: 13px;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  text-decoration: none;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 13px;
+}
+.btn-announcement{
+  cursor: default;
+  text-align: center;
+  color: #fff;
+  background-color: #cc3399;
+}
+.btn-add-to-card{
+background-color: #f0e524;
+color: #000;
+}
+.slider-item__btn{
+  position: absolute;
+  width: calc(100% - 36px);
+  bottom: 38px;
+}
+.slider-btn{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 36px;
+height: 36px;
+border: 2px solid var(--bd-color);
+border-radius: 50%;
+color: var(--bd-color);
+font-weight: bold;
+position: absolute;
+top:76px;
+background-color: #fff;
+z-index: 2; 
+cursor: pointer;
+}
+.slider-btn:hover{
+  color: #fff;
+  background-color: var(--bd-color);
+}
+.slider-btn_left{
+  left:-18px;
+}
+.slider-btn_right{
+  right:-18px;
+
+}
+.sticker-btn{ 
+  border-radius: 50%; 
+  border: 2px solid #ffffff; 
+  font-weight: inherit; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width:75px; 
+  height: 75px; 
+  right:-18px; 
+  position: absolute; 
+  top:-8%; 
+  left:68%; 
+  text-align: center; 
+  font-size: 12px; 
+  color:#fff; 
+  cursor: default; 
+} 
+.sticker-btn_new{ 
+  background-color: #6AC11C; 
+} 
+.sticker-btn_hot{ 
+  background-color: #1756D3; 
+}
+/*Ціни,слайдербаттони і зробити курсор інший,кнопка інший колір,поміняти місцями,або тінь
+стікери до слайдер айтем ,щоб лишались,норм назви класів без калсів стікер грін,блу
+рамка для стікера білого кольору
